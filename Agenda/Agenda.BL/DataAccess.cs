@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Agenda.BL
 {
-    class DataAccess
+    public class DataAccess
     {
     }
 }
