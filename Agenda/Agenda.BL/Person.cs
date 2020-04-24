@@ -8,5 +8,36 @@ namespace Agenda.BL
 {
     public class Person
     {
+        private static int personId = 0;
+        private string firstName;
+        private string lastName;
+        private string email;
+        private int age;
+
+        public Person()
+        {
+            PersonId++;
+            this.firstName = "";
+            this.lastName = "";
+            this.email = "";
+            this.age = 0;
+        }
+
+        public Person(int personId, string firstName, string lastName, string email, int age)
+        {
+            this.PersonId = personId;
+            
+        }
+
+        public int PersonId { get; private set; }
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public string Email { get; set; }
+
+        public int Age { get; set; }
+
     }
 }
