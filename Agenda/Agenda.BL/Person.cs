@@ -14,19 +14,18 @@ namespace Agenda.BL
         private string email;
         private int age;
 
-        public Person()
+        public Person(): this("", "", "", 0)
         {
-            PersonId++;
+            
+        }
+
+        public Person(string firstName, string lastName, string email, int age)
+        {            
+            this.PersonId = ++personId;
             this.firstName = "";
             this.lastName = "";
             this.email = "";
             this.age = 0;
-        }
-
-        public Person(int personId, string firstName, string lastName, string email, int age)
-        {
-            this.PersonId = personId;
-            
         }
 
         public int PersonId { get; private set; }
